@@ -1,7 +1,7 @@
 # Project Information
 site_name: 'CS Notes'
 site_description: 'A site for saving CS notes'
-author: 'Harry Wu'
+site_author: 'Harry Wu'
 site_url: 'http://csnotes.dhwuho.xyz/'
 
 # Repository
