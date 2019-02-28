@@ -15,9 +15,10 @@ How to compare different file systems? What's the measurements of DFS?
 - client must close
 
 comparison(statefull vs stateless)
-- message is longer
+
+- message is longer(stateless)
 - server is simpler
-- independent?
+- idempotent(stateless)
 - lock or lease
     stateful    ->  client locks a file
     stateless   ->  lease a period of time
@@ -42,7 +43,7 @@ Cache Consistency Policy:
 ##### block-based access
 - raw block: typically high performance
 - applicaiton must provide all data manage
-- leverage ls file
+- leverage: e.g. ls file
 - clustered file server
 
 ##### file-based access
@@ -56,5 +57,5 @@ Cache Consistency Policy:
 - cost
     high CPU per request
     network technology
-    infi band??
+    infi band
     RDMA, rget, rput

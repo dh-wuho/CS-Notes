@@ -22,6 +22,16 @@ extra:
     manifest: 'manifest.webmanifest'
     social:
 
+# extra css and js for katex
+extra_css:
+    - 'css/katex.css'
+    - 'https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css'
+
+extra_javascript:
+    - 'js/katex.js'
+    - 'https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js'
+    - 'https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js'
+
 # Google Analytics
 google_analytics:
 

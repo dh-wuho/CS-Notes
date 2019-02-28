@@ -28,7 +28,7 @@
     - a single master
     - multiple chunk servers
     - chunk servers can be accessed by clients
-    - ooooooo linux servers
+    - compliant linux servers
 - File
     - represent as fix-sized chunk(like object in Ceph)
     - 64-bits unique ID
