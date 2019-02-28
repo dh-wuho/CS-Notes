@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/0-index/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/10-SAN/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/11-NAS/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/12-DFS/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/13-Ceph/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>http://csnotes.dhwuho.xyz/csc568/14-GFS/</loc>
+     <lastmod>2019-02-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://csnotes.dhwuho.xyz/csc541/</loc>
      <lastmod>2019-02-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
