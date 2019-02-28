@@ -53,4 +53,4 @@ nav:
     
     - CSC541 Advanced Data Structure:
         - Preface: csc541/index.md
-        - interval-tree: csc541/interval-tree.md
+        - Interval Tree: csc541/interval-tree.md
