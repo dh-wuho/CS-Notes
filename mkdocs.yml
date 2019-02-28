@@ -2,11 +2,11 @@
 site_name: 'CS Notes'
 site_description: 'A site for saving CS notes'
 author: 'Harry Wu'
-site_url: ''
+site_url: 'http://csnotes.dhwuho.xyz/'
 
 # Repository
-repo_name: ''
-repo_url: ''
+repo_name: 'dh-wuho/CS-Notes'
+repo_url: 'https://github.com/dh-wuho/CS-Notes'
 
 # Theme Configuration
 theme:
@@ -39,4 +39,7 @@ nav:
         - 11 - NAS: csc568/11-NAS.md
         - 12 - DFS: csc568/12-DFS.md
         - 13 - Ceph: csc568/13-Ceph.md
-        - 12 - GFS: csc568/14-GFS.md
+        - 14 - GFS: csc568/14-GFS.md
+    
+    - CSC541 Advanced Data Structure:
+        - Preface: csc541/index.md
