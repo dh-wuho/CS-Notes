@@ -1,0 +1,42 @@
+# Project Information
+site_name: 'CS Notes'
+site_description: 'A site for saving CS notes'
+author: 'Harry Wu'
+site_url: ''
+
+# Repository
+repo_name: ''
+repo_url: ''
+
+# Theme Configuration
+theme:
+    name: 'material'
+    palette:
+        primary: blue
+        accent: indigo
+    logo:
+        icon: 'computer'
+
+# Customization
+extra:
+    manifest: 'manifest.webmanifest'
+    social:
+
+# Google Analytics
+google_analytics:
+
+# Mkdocs Extensions
+
+# Copyright
+copyright: 'Copyright &copy; 2018 - 2019 dhwuho'
+
+# Left Navigation
+nav:
+    - Home: index.md
+    - CSC568 Enterprise Storage:
+        - Preface: csc568/0-index.md
+        - 10 - SAN: csc568/10-SAN.md
+        - 11 - NAS: csc568/11-NAS.md
+        - 12 - DFS: csc568/12-DFS.md
+        - 13 - Ceph: csc568/13-Ceph.md
+        - 12 - GFS: csc568/14-GFS.md
