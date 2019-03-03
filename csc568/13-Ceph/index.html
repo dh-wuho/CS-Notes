@@ -667,15 +667,27 @@
 <p>MDS returns capability, file index, size, stripe information...</p>
 <p>client reads/writes directly from/to OSD</p>
 <p>MDS mnage the capability</p>
-<p>client sends close
-- synchronization
-    - adhere to POSIX
-    - include HPC-oriented extensions
-    &gt;consistency/correctness by defaults
-    &gt;optimally relax constraint, like clients could write to different locations
-    &gt;extension for both data and metadata
-    - synchronize I/O used on multiple writes, or mix reader and writer.</p>
+<p>client sends close</p>
 </blockquote>
+<ul>
+<li>
+<p>synchronization</p>
+<ul>
+<li>adhere to POSIX</li>
+<li>include HPC-oriented extensions<blockquote>
+<p>consistency/correctness by defaults</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>optimally relax constraint, like clients could write to different locations</p>
+<p>extension for both data and metadata</p>
+</blockquote>
+<ul>
+<li>synchronize I/O used on multiple writes, or mix reader and writer.</li>
+</ul>
+</li>
+</ul>
 <h3 id="distribute-metadata">distribute metadata</h3>
 <ul>
 <li>HDS used journaling<ul>
