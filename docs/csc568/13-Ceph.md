@@ -57,12 +57,16 @@ A kind of distributed file system, using **CRUSH algorithm**.
 >MDS mnage the capability
 
 >client sends close
+
 - synchronization
     - adhere to POSIX
     - include HPC-oriented extensions
     >consistency/correctness by defaults
+    
     >optimally relax constraint, like clients could write to different locations
+    
     >extension for both data and metadata
+    
     - synchronize I/O used on multiple writes, or mix reader and writer.
 
 ### distribute metadata
