@@ -46,12 +46,12 @@ A kind of distributed file system, using **CRUSH algorithm**.
     - POSIX compliant
     - decouple data and metadata
 - user space implementation
-    >example:
-    >client sends request to MDS
-    >MDS returns capability, file index, size, stripe information...
-    >client reads/writes directly from/to OSD
-    >MDS mnage the capability
-    >client sends close
+>example:
+>client sends request to MDS
+>MDS returns capability, file index, size, stripe information...
+>client reads/writes directly from/to OSD
+>MDS mnage the capability
+>client sends close
 - synchronization
     - adhere to POSIX
     - include HPC-oriented extensions

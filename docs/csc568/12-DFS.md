@@ -64,7 +64,9 @@ Cache Consistency Policy:
     permission
     
     backup(e.g. S3)
+
 - share data
+
 - cost
     
     high CPU per request
