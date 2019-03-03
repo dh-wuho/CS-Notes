@@ -39,7 +39,7 @@ Consistency: replication, update
 
 Cache Consistency Policy:
 
-- UNIX file consistency: no design on it,it leaves to the application to handle the consistency problem. e.g. Google doc.
+- UNIX file consistency: no design on it, it leaves to the application to handle the consistency problem. e.g. Google doc.
 - write-through-cache(relatively write-through-disk)
 - dealyed-write: delay some files
 - write-on-close: delay one single file
@@ -71,8 +71,6 @@ Cache Consistency Policy:
     
     high CPU per request
     
-    network technology
+    network technology: infi band
     
-    infi band
-    
-    RDMA, rget, rput
+    RDMA: rget, rput

@@ -10,7 +10,7 @@ A kind of distributed file system, using **CRUSH algorithm**.
 - throughtput
 - client performance
 - individual
-- emphasison HPO: shared files, lock-step manner(distribute jobs to processors then merge)
+- emphasis on HPO: shared files, lock-step manner(distribute jobs to processors then merge)
 - reliability
 - dynamic(peta byte)
 - build incrementally
@@ -47,10 +47,15 @@ A kind of distributed file system, using **CRUSH algorithm**.
     - decouple data and metadata
 - user space implementation
 >example:
+
 >client sends request to MDS
+
 >MDS returns capability, file index, size, stripe information...
+
 >client reads/writes directly from/to OSD
+
 >MDS mnage the capability
+
 >client sends close
 - synchronization
     - adhere to POSIX
