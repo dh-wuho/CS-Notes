@@ -609,23 +609,29 @@
 <li>message is longer(stateless)</li>
 <li>server is simpler</li>
 <li>idempotent(stateless)</li>
-<li>lock or lease
-    stateful    -&gt;  client locks a file
-    stateless   -&gt;  lease a period of time</li>
+<li>
+<p>lock or lease</p>
+<p>stateful    -&gt;  client locks a file</p>
+<p>stateless   -&gt;  lease a period of time</p>
+</li>
 </ul>
 <h3 id="3-cache">3. Cache</h3>
-<p>Where does the caching occur?
-- clients: memory/disks
-- server: memory</p>
-<p>Cache Size Choice: once it's determined, changing it is risky!(Cache background....any solution to it)
-Cache Replacement Policy: LRU, approximate policy - clock</p>
-<p>Consistency: replication, update
-Cache Consistency Policy:
-- UNIX file consistency: no design on it,it leaves to the application to handle the consistency problem. e.g. Google doc.
-- write-through-cache(relatively write-through-disk)
-- dealyed-write: delay some files
-- write-on-close: delay one single file
-- delayed-write-on-close: the lifetime of files are usually short</p>
+<p>Where does the caching occur?</p>
+<ul>
+<li>clients: memory/disks</li>
+<li>server: memory</li>
+</ul>
+<p>Cache Size Choice: once it's determined, changing it is risky!(Cache background....any solution to it)</p>
+<p>Cache Replacement Policy: LRU, approximate policy - clock</p>
+<p>Consistency: replication, update</p>
+<p>Cache Consistency Policy:</p>
+<ul>
+<li>UNIX file consistency: no design on it,it leaves to the application to handle the consistency problem. e.g. Google doc.</li>
+<li>write-through-cache(relatively write-through-disk)</li>
+<li>dealyed-write: delay some files</li>
+<li>write-on-close: delay one single file</li>
+<li>delayed-write-on-close: the lifetime of files are usually short</li>
+</ul>
 <h3 id="4-replication">4. Replication</h3>
 <h5 id="block-based-access">block-based access</h5>
 <ul>
@@ -636,18 +642,22 @@ Cache Consistency Policy:
 </ul>
 <h5 id="file-based-access">file-based access</h5>
 <ul>
-<li>Virtualization. Benefits over block-based access: 
-    abstraction hides the implementation
-    server independence</li>
-<li>Fine-grained data management
-    permission
-    backup(e.g. S3)</li>
-<li>share data</li>
-<li>cost
-    high CPU per request
-    network technology
-    infi band
-    RDMA, rget, rput</li>
+<li>
+<p>Virtualization. Benefits over block-based access: </p>
+<p>abstraction hides the implementation</p>
+<p>server independence</p>
+</li>
+<li>
+<p>Fine-grained data management</p>
+<p>permission</p>
+<p>backup(e.g. S3)
+- share data
+- cost</p>
+<p>high CPU per request</p>
+<p>network technology</p>
+<p>infi band</p>
+<p>RDMA, rget, rput</p>
+</li>
 </ul>
                 
                   
