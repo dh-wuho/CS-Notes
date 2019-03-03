@@ -613,7 +613,7 @@
 <li>throughtput</li>
 <li>client performance</li>
 <li>individual</li>
-<li>emphasison HPO: shared files, lock-step manner(distribute jobs to processors then merge)</li>
+<li>emphasis on HPO: shared files, lock-step manner(distribute jobs to processors then merge)</li>
 <li>reliability</li>
 <li>dynamic(peta byte)</li>
 <li>build incrementally</li>
@@ -658,26 +658,24 @@
 </ul>
 </li>
 <li>user space implementation<blockquote>
-<p>example:
-client sends request to MDS
-MDS returns capability, file index, size, stripe information...
-client reads/writes directly from/to OSD
-MDS mnage the capability
-client sends close</p>
+<p>example:</p>
 </blockquote>
 </li>
-<li>synchronization<ul>
-<li>adhere to POSIX</li>
-<li>include HPC-oriented extensions<blockquote>
-<p>consistency/correctness by defaults
-optimally relax constraint, like clients could write to different locations
-extension for both data and metadata</p>
+</ul>
+<blockquote>
+<p>client sends request to MDS</p>
+<p>MDS returns capability, file index, size, stripe information...</p>
+<p>client reads/writes directly from/to OSD</p>
+<p>MDS mnage the capability</p>
+<p>client sends close
+- synchronization
+    - adhere to POSIX
+    - include HPC-oriented extensions
+    &gt;consistency/correctness by defaults
+    &gt;optimally relax constraint, like clients could write to different locations
+    &gt;extension for both data and metadata
+    - synchronize I/O used on multiple writes, or mix reader and writer.</p>
 </blockquote>
-</li>
-<li>synchronize I/O used on multiple writes, or mix reader and writer.</li>
-</ul>
-</li>
-</ul>
 <h3 id="distribute-metadata">distribute metadata</h3>
 <ul>
 <li>HDS used journaling<ul>
