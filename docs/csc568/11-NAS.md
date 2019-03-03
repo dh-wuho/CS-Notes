@@ -28,13 +28,20 @@
 ### Server:
 - manage data(efficiently, reliably, securely...)
 - could prefetch
-- could upcalls(communicate with clients). upcalls are limited on stateful protocol
+- could upcalls(communicate with clients). 
+
+    upcalls are limited on stateful protocol
 
 ### Protocols of NAS
 - NFS
+
     stateless
+
     hierarchy
-    no upcalss from servers
+
+    no upcalls from servers
 - SMB(CIFS)
+ 
     more "talktive"
+ 
     generic: printer
