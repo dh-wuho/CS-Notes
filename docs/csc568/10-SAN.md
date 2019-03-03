@@ -16,7 +16,9 @@ Organize connection between **storage** and **servers**.
 
 SCSI is a kind of **block** protocol. Others are files or objects.
 
-![SCSIarchictecture][]
+![SCS-S2S](../img/568/SCSI-S2S.png)
+![SCS-S2M](../img/568/SCSI-S2M.png)
+![SCS-M2M](../img/568/SCSI-M2M.png)
 
 ### iSCSI
 - iSCSI, FCOE fiber channel over Ethernet
@@ -26,6 +28,7 @@ SCSI is a kind of **block** protocol. Others are files or objects.
 - switched fabric
 - block I/O
 
+// to do
 ![SANarchictecture][]
 
 

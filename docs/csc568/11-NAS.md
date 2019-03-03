@@ -12,8 +12,11 @@
 - client: initialize the request
 - server: locate file, response the file through network, resolve conflict, prioritize
 - design: 
+    
     what APIs are needed to finish the jobs? (straightforward protocol)
+    
     how elaborate the client/server is? (server has to handle many clients at the same time)
+    
     so the simpler server is, the more concurrency server can be. e.g. JavaScript.
 
 ### Client

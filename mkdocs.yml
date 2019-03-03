@@ -4,6 +4,9 @@ site_description: 'A site for saving CS notes'
 site_author: 'Harry Wu'
 site_url: 'http://csnotes.dhwuho.xyz/'
 
+# for test
+dev_addr: 192.168.164.130:8000
+
 # Repository
 repo_name: 'dh-wuho/CS-Notes'
 repo_url: 'https://github.com/dh-wuho/CS-Notes'
@@ -43,6 +46,7 @@ copyright: 'Copyright &copy; 2018 - 2019 dhwuho'
 # Left Navigation
 nav:
     - Home: index.md
+
     - CSC568 Enterprise Storage:
         - Preface: csc568/0-index.md
         - 10 - SAN: csc568/10-SAN.md

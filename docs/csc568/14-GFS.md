@@ -43,6 +43,9 @@
     - it doesn't use VFS
     - no caching at clients. I/O are usually streaming, no temporary cache .....
 
+### Archictecture Overveiw
+![SystemOverveiw](../img/568/GFS.png)
+
 ### Why Single Master Design?
 - simple. Multi-masters have to cooperate or replicate master.
 - master only ensuadsf chunk locations
