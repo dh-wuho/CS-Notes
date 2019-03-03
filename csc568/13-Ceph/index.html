@@ -657,13 +657,15 @@
 <li>decouple data and metadata</li>
 </ul>
 </li>
-<li>user space implementation
-    &gt;example:
-    &gt;client sends request to MDS
-    &gt;MDS returns capability, file index, size, stripe information...
-    &gt;client reads/writes directly from/to OSD
-    &gt;MDS mnage the capability
-    &gt;client sends close</li>
+<li>user space implementation<blockquote>
+<p>example:
+client sends request to MDS
+MDS returns capability, file index, size, stripe information...
+client reads/writes directly from/to OSD
+MDS mnage the capability
+client sends close</p>
+</blockquote>
+</li>
 <li>synchronization<ul>
 <li>adhere to POSIX</li>
 <li>include HPC-oriented extensions<blockquote>
