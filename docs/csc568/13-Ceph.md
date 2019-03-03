@@ -25,8 +25,8 @@ A kind of distributed file system, using **CRUSH algorithm**.
     - They have different retreving pattern
 
 ### Archictecture Overveiw
-![System_Overveiw](../img/568/ceph-1.png)
-![System_Overveiw](../img/568/ceph-2.png)
+![System_Overveiw](../assets/568/ceph-1.png)
+![System_Overveiw](../assets/568/ceph-2.png)
 
 ### Key features
 
