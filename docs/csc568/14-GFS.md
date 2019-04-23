@@ -48,7 +48,7 @@
 
 ### Why Single Master Design?
 - simple. Multi-masters have to cooperate or replicate master.
-- master only ensuadsf chunk locations
+- master only ensure of chunk locations
 - clients typically ask for multiple chunk locations in one request
 - chunk size 64MB or 64bits(ID)
 - fewer requests to master

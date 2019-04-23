@@ -54,7 +54,14 @@ nav:
         - 12 - DFS: csc568/12-DFS.md
         - 13 - Ceph: csc568/13-Ceph.md
         - 14 - GFS: csc568/14-GFS.md
-    
-    - CSC541 Advanced Data Structure:
-        - Preface: csc541/index.md
-        - Interval Tree: csc541/interval-tree.md
+        - 15 - LFS: csc568/15-LFS.md
+        - 16 - Redundancy: csc568/16-Redundancy.md
+        - 17 - Deduplication: csc568/17-Deduplication.md
+        - 18 - GNR: csc568/18-GNR.md
+        - 19 - Erasure Encoding: csc568/19-Erasure-Encoding.md
+        - 20 - Business Continuity: csc568/20-Business-Continuity.md
+        - 21 - SCM: csc568/21-SCM.md
+        - 23 - Haystack: csc568/23-Haystack.md
+        - 24 - Disasters: csc568/24-Disasters.md
+        - 25 - DevFS: csc568/25-DevFS.md
+        - 26 - SSD Reliability: csc568/26-SSD-Reliability.md
