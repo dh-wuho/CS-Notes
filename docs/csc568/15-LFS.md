@@ -20,9 +20,6 @@
 - main memory and cache size -> grow up
 - Max kernels processor -> grow up
 
-- 
-Workloads
-- 
 - difficult
 small files
 random disk I/O
