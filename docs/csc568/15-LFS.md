@@ -20,11 +20,6 @@
 - main memory and cache size -> grow up
 - Max kernels processor -> grow up
 
-- difficult
-small files
-random disk I/O
-much creation and deletion(meatadata)
-
 #### Two general problems
 - information is spread all servers: many small accesses
 
