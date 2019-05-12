@@ -653,44 +653,67 @@
 <li>sharing</li>
 </ul>
 </li>
-<li>
-<p>data planes</p>
-<ul>
+<li>data planes<ul>
 <li>rw data</li>
 <li>rw metadata</li>
 </ul>
 </li>
+</ul>
+<hr />
+<ol>
 <li>
 <p>kernel FS</p>
-</li>
+<ul>
 <li>manage both control and data</li>
 <li>trap into OS</li>
-<li>lib FS</li>
+</ul>
+</li>
+<li>
+<p>lib FS</p>
+<ul>
 <li>all ops on Application</li>
 <li>hard to persist and share</li>
-<li>Hybrid FS(lib + kernel)</li>
+</ul>
+</li>
+<li>
+<p>Hybrid FS(lib + kernel)</p>
+<ul>
 <li>common data and metadata, ops</li>
 <li>no trap</li>
 <li>kernel
     permission check
     share</li>
-<li>Hybrid FS + trusted server</li>
+</ul>
+</li>
+<li>
+<p>Hybrid FS + trusted server</p>
+<ul>
 <li>micro-kernel like approach</li>
 <li>trusted control process facilitates, control plane ops</li>
 <li>eliminte traps</li>
-<li>Direct access FS
-Challenges</li>
+</ul>
+</li>
+<li>
+<p>Direct access FS</p>
+</li>
+</ol>
+<p>Challenges</p>
+<ul>
 <li>lib FS fails to satisfy 3 important properties: <ul>
 <li>integrity. kernel FS manages in-memory and on-disks data.</li>
 <li>single process</li>
-<li>concurrency: crash concurrency, permission enforcement
-Benefits</li>
+<li>concurrency: crash concurrency, permission enforcement</li>
 </ul>
 </li>
+</ul>
+<p>Benefits</p>
+<ul>
 <li>can exploit the parallelism fo the hardware: multiple IO channels on CPU</li>
 <li>devFS can directly control</li>
-<li>volitile memory helps the creash recovery
-Limitations</li>
+<li>volitile memory helps the creash recovery</li>
+</ul>
+<p>Limitations</p>
+<ul>
 <li>increase the memroy footprint</li>
 <li>dev CPU
     are slower(to save power)

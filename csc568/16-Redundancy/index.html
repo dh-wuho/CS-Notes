@@ -717,11 +717,12 @@
 <li>old</li>
 </ul>
 <h3 id="raid-parity">RAID parity</h3>
-<p>n = k + 1
-N(wordsize) = 1</p>
-<p>RAID 6
-n = k + 2
-N = 1</p>
+<p>n = k + 1</p>
+<p>N(wordsize) = 1</p>
+<hr />
+<p>RAID 6</p>
+<p>n = k + 2</p>
+<p>N = 1</p>
 <h3 id="erasure-encoding">Erasure encoding</h3>
 <ul>
 <li>k disks &amp; data</li>
@@ -742,23 +743,25 @@ $$c_{m-1} = a_{m-1, 0} + ... + a_{m-1, k-1}d_{k-1}$$</p>
 </li>
 <li>
 <p>Max distance separable MDS</p>
-</li>
-<li>
-<p>reconstruct from any m failures</p>
+<ul>
+<li>reconstruct from any m failures</li>
+</ul>
 </li>
 <li>
 <p>Longer W</p>
-</li>
+<ul>
 <li>richer set of erasure codes</li>
 <li>must define arithmetic</li>
 <li>positive numbers</li>
 <li>overflow</li>
 <li>Galois Field/Finite Field</li>
+</ul>
+</li>
 </ol>
 <p>Linux RAID 6 (W = 8)
 $$c_0 = a_{0, 0}d_0 + a_{0, 1}d_1$$
 $$c_1 = a_{1, 0}d_0 + a_{1, 1}d_1$$
-$$p = d_0 xor d_1$$</p>
+$$p = d_0~xor~d_1$$</p>
 <ol>
 <li>Diagonal. Use multiple disks to recover
 In storage system, bits are lost rather than flipped.</li>
