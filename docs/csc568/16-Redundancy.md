@@ -21,10 +21,15 @@
 
 ### RAID parity
 n = k + 1
+
 N(wordsize) = 1
 
+---
+
 RAID 6
+
 n = k + 2
+
 N = 1
 
 ### Erasure encoding
@@ -45,19 +50,19 @@ $$c_{m-1} = a_{m-1, 0} + ... + a_{m-1, k-1}d_{k-1}$$
 1. Parity: "+" - XOR; "*" - AND; with 1.
 
 2. Max distance separable MDS
-- reconstruct from any m failures
+    - reconstruct from any m failures
 
 3. Longer W
-- richer set of erasure codes
-- must define arithmetic
-- positive numbers
-- overflow
-- Galois Field/Finite Field
+    - richer set of erasure codes
+    - must define arithmetic
+    - positive numbers
+    - overflow
+    - Galois Field/Finite Field
 
 Linux RAID 6 (W = 8)
 $$c_0 = a_{0, 0}d_0 + a_{0, 1}d_1$$
 $$c_1 = a_{1, 0}d_0 + a_{1, 1}d_1$$
-$$p = d_0 xor d_1$$
+$$p = d_0~xor~d_1$$
 
 4. Diagonal. Use multiple disks to recover
 In storage system, bits are lost rather than flipped.

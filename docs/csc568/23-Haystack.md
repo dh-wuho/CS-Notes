@@ -23,6 +23,7 @@
 ### Haystack store:
 - persistent
 - capacity(is divided into physical volumes)
+    
     > e.g. 100TB in server -> 100 * 100GB volumes
 
 - logical volume

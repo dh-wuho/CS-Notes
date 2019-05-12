@@ -17,33 +17,45 @@
     - rw data
     - rw metadata
 
+---
+
 1. kernel FS
-- manage both control and data
-- trap into OS
+    - manage both control and data
+    - trap into OS
+
 2. lib FS
-- all ops on Application
-- hard to persist and share
+    - all ops on Application
+    - hard to persist and share
+
 3. Hybrid FS(lib + kernel)
-- common data and metadata, ops
-- no trap
-- kernel
-    permission check
-    share
+    - common data and metadata, ops
+    - no trap
+    - kernel
+        permission check
+        share
+
 4. Hybrid FS + trusted server
-- micro-kernel like approach
-- trusted control process facilitates, control plane ops
-- eliminte traps
+    - micro-kernel like approach
+    - trusted control process facilitates, control plane ops
+    - eliminte traps
+
 5. Direct access FS
+
 Challenges
+
 - lib FS fails to satisfy 3 important properties: 
     - integrity. kernel FS manages in-memory and on-disks data.
     - single process
     - concurrency: crash concurrency, permission enforcement
+
 Benefits
+
 - can exploit the parallelism fo the hardware: multiple IO channels on CPU
 - devFS can directly control
 - volitile memory helps the creash recovery
+
 Limitations
+
 - increase the memroy footprint
 - dev CPU
     are slower(to save power)

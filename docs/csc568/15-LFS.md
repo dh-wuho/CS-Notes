@@ -29,6 +29,7 @@
 
 Bundles writes
 - high write bandwidth
+
 How
 - delay write
 - write large continuous extents

@@ -16,6 +16,7 @@
 - persistent RAM
 
 Why don't use flash for SCM?
+
 - No consistent semantics for writing a page, a word or a block.
 - Address for data may change along with the program.
 - wear-out problem.
