@@ -47,6 +47,10 @@ copyright: 'Copyright &copy; 2018 - 2019 dhwuho'
 nav:
     - Home: index.md
 
+    - CSC522 Automated Learning and Data Analysis:
+        - Preface:
+        - MidTerm Review: csc522/midTerm.md
+
     - CSC568 Enterprise Storage:
         - Preface: csc568/0-index.md
         - 10 - SAN: csc568/10-SAN.md
