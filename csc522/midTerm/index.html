@@ -536,49 +536,48 @@
 </li>
 <li>
 <p>Explain the difference between supervised and unsupervised learning.</p>
+<p>Supervised: feature X with Label Y to predict(Regression, Classification).</p>
+<p>Unsupervised: feature X to learn itself to describe(Density estimation, Clustering, Dimensionality reduction).</p>
 </li>
-</ol>
-<p>Supervised: feature X with Label Y to predict(Regression, Classification).
-Unsupervised: feature X to learn itself to describe(Density estimation, Clustering, Dimensionality reduction).</p>
-<ol>
-<li>Explain the nature and significance of noise and outliers in data analysis.</li>
-</ol>
-<p>Noise refers to modification of original values.
-Outliers are data objects with characteristics that are considerably different than most of the other data objects in the data set.</p>
-<ol>
-<li>List, explain, compare, and evaluate methods for handling missing data values.</li>
-</ol>
-<p>Eliminate Data Objects: straightforward to implement, but signicantly limits the scope and power of study, and introduces bias when data is not missing at random.
-Estimate Missing Values: Comparing to complete-case analysis, it can utilize all present data for analysis. However, some data imputation methods are only suitable when missing rate is low, e.g. mean- or median-lling and knn.
-Ignore the Missing Value During Analysis.
-Replace with all possible values(weighted by probabilities)</p>
-<ol>
-<li>Explain the notion of sampling, and list and explain potential problems arising in
-sampling data sets;</li>
-</ol>
-<p>Sampling is the use of a subset of the population to represent the whole population.
-Two key principles for effective sampling:
-- using a sample will work almost as well as using the entire data sets, if the sample is representative.
-- A sample is representative if it has approximately the same property as the original set of data.</p>
-<ol>
-<li>Explain and understand how Principle Component Analysis(PCA) works and can be applied to do feature reduction;</li>
-</ol>
+<li>
+<p>Explain the nature and significance of noise and outliers in data analysis.</p>
+<p>Noise refers to modification of original values.</p>
+<p>Outliers are data objects with characteristics that are considerably different than most of the other data objects in the data set.</p>
+</li>
+<li>
+<p>List, explain, compare, and evaluate methods for handling missing data values.</p>
+<p>Eliminate Data Objects: straightforward to implement, but signicantly limits the scope and power of study, and introduces bias when data is not missing at random.</p>
+<p>Estimate Missing Values: Comparing to complete-case analysis, it can utilize all present data for analysis. However, some data imputation methods are only suitable when missing rate is low, e.g. mean- or median-lling and knn.</p>
+<p>Ignore the Missing Value During Analysis.</p>
+<p>Replace with all possible values(weighted by probabilities)</p>
+</li>
+<li>
+<p>Explain the notion of sampling, and list and explain potential problems arising in sampling data sets;</p>
+<p>Sampling is the use of a subset of the population to represent the whole population.</p>
+<p>Two key principles for effective sampling:
+    - using a sample will work almost as well as using the entire data sets, if the sample is representative.</p>
+<pre><code>- A sample is representative if it has approximately the same property as the original set of data.
+</code></pre>
+</li>
+<li>
+<p>Explain and understand how Principle Component Analysis(PCA) works and can be applied to do feature reduction;</p>
 <p>When applying PCA, the resulted principle components are always orthogonal(perpendicular) to one another.</p>
-<ol>
-<li>List, explain, and compare different methods for converting continuous attributes into discrete attributes.</li>
-</ol>
-<p>Discretization
-Attributes Transformation</p>
-<ol>
-<li>Explain and compute the mean, median, modes, and Z-scores of sets of data values.</li>
-</ol>
-<p>Frequency(频率或频数): 
-Mean(平均数): very sensitive to outliers
-Median(中位数): Summary of frequency distribution
-Modes(众数):
-Z-scores: the standard score is the signed fractional number of standard deviations by which the value of an observation or data point is above the mean value of what is being observed or measured.
-Z-scores: (oneData - mean) / standardDeviation</p>
-<ol>
+<p>When applying PCA, each of principal components is always a linear combination of the original features.</p>
+</li>
+<li>
+<p>List, explain, and compare different methods for converting continuous attributes into discrete attributes.</p>
+<p>Discretization</p>
+<p>Attributes Transformation</p>
+</li>
+<li>
+<p>Explain and compute the mean, median, modes, and Z-scores of sets of data values.</p>
+<p>Frequency(频率或频数): </p>
+<p>Mean(平均数): very sensitive to outliers</p>
+<p>Median(中位数): Summary of frequency distribution</p>
+<p>Modes(众数):</p>
+<p>Z-scores: the standard score is the signed fractional number of standard deviations by which the value of an observation or data point is above the mean value of what is being observed or measured.</p>
+<p>$$Z-scores = (oneData - mean) / standardDeviation$$</p>
+</li>
 <li>
 <p>Explain the notion of probability distribution and compute simple distributions from data frequencies.</p>
 </li>
@@ -587,24 +586,16 @@ Z-scores: (oneData - mean) / standardDeviation</p>
 </li>
 <li>
 <p>Explain the notion of correlation of data attributes.</p>
+<p>Correlation measures the linear relationship between objects.</p>
+<p>Variance – measure of the deviation from the mean for points in one dimension.</p>
+<p>Covariance – a measure of how much each of the dimensions varies from the mean with respect to each other.</p>
+<p>$$Correlation(X, Y) = \frac{Covariance(X, Y)}{Variance(X)Variance(Y)}$$</p>
 </li>
-</ol>
-<p>Correlation measures the linear relationship between objects.
-Variance – measure of the deviation from the mean for points in one dimension.
-Covariance – a measure of how much each of the dimensions varies from the mean with respect to each other.
-$$Correlation(X, Y) = \frac{Covariance(X, Y)}{Variance(X)Variance(Y)}$$</p>
-<ol>
-<li>Explain and give examples of the notion of decision trees.</li>
-</ol>
-<p>Given a collection of records (training set ): Each
-record contains a set of attributes, one of the
-attributes is the class. (Categorical, discrete,
-unordered)
-Find a model for class attribute as a function of the
-values of other attributes.
-Goal: previously unseen records (test set) should be
-assigned a class as accurately as possible.</p>
-<ol>
+<li>
+<p>Explain and give examples of the notion of decision trees.</p>
+<p>Given a collection of records (training set ): Each record contains a set of attributes, one of the attributes is the class. (Categorical, discrete, unordered) Find a model for class attribute as a function of the values of other attributes.</p>
+<p>Goal: previously unseen records (test set) should be assigned a class as accurately as possible.</p>
+</li>
 <li>
 <p>Construct decision trees from small data sets by using entropy and information gain.</p>
 </li>
@@ -613,34 +604,32 @@ assigned a class as accurately as possible.</p>
 </li>
 <li>
 <p>Explain the problems caused by underfitting and overfitting data, and by inexpressive representations.</p>
+<p>Underfitting: when model is too simple, both training and test errors are large.</p>
+<p>Overfitting: when model is complex where training error is small but test error is large.</p>
 </li>
-</ol>
-<p>Underfitting: when model is too simple, both training and test errors are large.
-Overfitting: when model is complex where training error is small but test error is large.</p>
-<ol>
-<li>Understand and explain: generalization error, optimistic error, pessimistic error; postpruning based on optimistic error, pessimistic error.</li>
-</ol>
-<p>Generalization error: Generalization error is the true error for the population of examples we would like to optimize.
-Optimistic error:
-Pessimistic:</p>
-<ol>
+<li>
+<p>Understand and explain: generalization error, optimistic error, pessimistic error; postpruning based on optimistic error, pessimistic error.</p>
+<p>Generalization error: Generalization error is the true error for the population of examples we would like to optimize.</p>
+<p>Optimistic error:</p>
+<p>Pessimistic:</p>
+</li>
 <li>
 <p>How to build decision trees with missing values and apply the decision tree to test data with missing values.</p>
 </li>
 <li>
 <p>Chi-square Tests
-$$X^2 = \sum{\frac{O_i - E_i}{E_i}}$$
-O is pratical value.
-E is theoretical value.</p>
+    $$X^2 = \sum{\frac{O_i - E_i}{E_i}}$$</p>
+<p>O is pratical value.</p>
+<p>E is theoretical value.</p>
 </li>
 <li>
 <p>Explain the procedure of Hold-out, Stratified Sampling, Cross-Validation, and LOOCV.</p>
 </li>
 </ol>
-<p>Holdout: 2/3 for training and 1/3 for testing.
-Stratified Sampling: sample in such a way that each class is represented in both sets.
-Cross-Validation
-LOOCV</p>
+<p>Holdout: 2/3 for training and 1/3 for testing.</p>
+<p>Stratified Sampling: sample in such a way that each class is represented in both sets.</p>
+<p>Cross-Validation</p>
+<p>LOOCV</p>
 <ol>
 <li>
 <p>Contrast and explain the notions of error rate and confusion matrices in classification.</p>
@@ -650,15 +639,13 @@ LOOCV</p>
 </li>
 <li>
 <p>Explain the notion of Accuracy, Error Rate, Precision, Recall, F-measure.</p>
-</li>
-</ol>
 <p>$$Accuracy = \frac{TP+TN}{TP+FP+TN+FN}$$
 $$Error Rate = 1 - Accuracy$$
 $$Precision(p) = \frac{TP}{TP+FP}$$
 $$Recall(r) = \frac{TP}{TP+FN}$$
 $$F-Measure(F) = \frac{2rp}{r+p} = \frac{2TP}{2TP+FP+FN}$$</p>
 <p>The Accuracy (or error rate=1-Accuracy) is an inadequate measure of the performance of an algorithm, it doesn’t take into account the cost of making wrong decisions.</p>
-<ol>
+</li>
 <li>
 <p>Explain the notion of an ROC curve, AUC, and its meaning for classifier performance.</p>
 </li>
@@ -677,11 +664,17 @@ $$F-Measure(F) = \frac{2rp}{r+p} = \frac{2TP}{2TP+FP+FN}$$</p>
 <li>
 <p>Explain the notion of probabilistic or Bayesian methods.</p>
 </li>
-<li>State and explain Bayes theorem and its use in updating probability distributions to
-incorporate new evidence, and use it to compute probabilities.</li>
-<li>Diagram and explain the Naive Bayesian classification method.</li>
-<li>Compute probabilities in small data sets and use these values in a naive Bayesian
-classifier to classify data items.</li>
+<li>
+<p>State and explain Bayes theorem and its use in updating probability distributions to
+incorporate new evidence, and use it to compute probabilities.</p>
+</li>
+<li>
+<p>Diagram and explain the Naive Bayesian classification method.</p>
+</li>
+<li>
+<p>Compute probabilities in small data sets and use these values in a naive Bayesian
+classifier to classify data items.</p>
+</li>
 </ol>
                 
                   
