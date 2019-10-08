@@ -48,7 +48,6 @@ nav:
     - Home: index.md
 
     - CSC522 Automated Learning and Data Analysis:
-        - Preface:
         - MidTerm Review: csc522/midTerm.md
 
     - CSC568 Enterprise Storage:
