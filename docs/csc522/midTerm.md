@@ -1,8 +1,11 @@
 1. List, explain, and identify the different types of data attributes (nominal, ordinal, interval, ratio).
 
 Nominal: ==, !=
+
 Ordinal: ==, !=, <, >, <=, >=
+
 Interval: ==, !=, <, >, <=, >=, +, -
+
 Ratio: ==, !=, <, >, <=, >=, +, -, *, /
 
 2. Explain the difference between supervised and unsupervised learning.
