@@ -1,5 +1,6 @@
 #!/bin/bash
-mkdocs gh-deploy
+# mkdocs gh-deploy
+python -m mkdocs gh-deploy
 git add .
 git commit -m 'update master'
 git push origin master
