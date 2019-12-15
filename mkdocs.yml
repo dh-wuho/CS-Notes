@@ -5,7 +5,7 @@ site_author: 'Harry Wu'
 site_url: 'http://csnotes.dhwuho.xyz/'
 
 # for test
-dev_addr: 192.168.164.130:8000
+dev_addr: 192.168.6.140:8000
 
 # Repository
 repo_name: 'dh-wuho/CS-Notes'
@@ -47,8 +47,10 @@ copyright: 'Copyright &copy; 2018 - 2019 dhwuho'
 nav:
     - Home: index.md
 
-    - CSC522 Automated Learning and Data Analysis:
-        - MidTerm Review: csc522/midTerm.md
+    - 2019-Fall:
+        - csc522 MidTerm Review: 2019-Fall/midTerm.md
+        - csc522 Final Review: 2019-Fall/finalReview.md
+        - csc510 Review: 2019-Fall/csc510-review.md
 
     - CSC568 Enterprise Storage:
         - Preface: csc568/0-index.md
