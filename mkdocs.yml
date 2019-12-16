@@ -48,8 +48,8 @@ nav:
     - Home: index.md
 
     - 2019-Fall:
-        - csc522 MidTerm Review: 2019-Fall/midTerm.md
-        - csc522 Final Review: 2019-Fall/finalReview.md
+        - csc522 MidTerm Review: 2019-Fall/csc522-midTerm.md
+        - csc522 Final Review: 2019-Fall/csc522-finalReview.md
         - csc510 Review: 2019-Fall/csc510-review.md
 
     - CSC568 Enterprise Storage:

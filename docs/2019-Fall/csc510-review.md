@@ -215,6 +215,7 @@ Different kinds:
 - Tools can execute features as automated tests.
 
 Goals:
+
 - Improve feature understanding
 - Describe how system behaves rather than how it works
 - Must run at 100% before proceeding
@@ -231,6 +232,7 @@ Goals:
 Card - Conversation - Confirmation
 ###### Attributes of an user story or epic
 INVEST
+
 - Independent
 - Negotiable
 - Valuable for purchasers or users
